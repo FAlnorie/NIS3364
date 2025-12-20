@@ -11,9 +11,14 @@
 ```
 ├── source/
 │   ├── cmd/
-│   │   ├── client/            # 客户端代码 (GUI)
+│   │   ├── client/            # 客户端代码 
+│   │   │   ├── main.go
+│   │   │   └── gui.go
 │   │   └── server/            # 服务端代码
+│   │       └── main.go
 │   ├── utils/                 # 通用工具包 (消息定义、编解码)
+│   │       └── utils.go
+│   ├── go.sum                 # 校验和文件
 │   └── go.mod                 # 依赖管理
 ├── bin/
 │   ├── client_linux_amd64.exe # 客户端程序 linux amd64
